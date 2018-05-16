@@ -29,7 +29,7 @@ public class JavaDateandTime {
 	private static String getDay(String date, String month, String year) {
 		Calendar cal = Calendar.getInstance();
 		cal.set(Integer.parseInt(year), Integer.parseInt(month)-1, Integer.parseInt(date));
-		int day = cal.get(Calendar.DAY_OF_WEEK);
+		int day = cal.get(Calendar.DAY_OF_WEEK);//Sunday=1 , Monday=2 , Tuesday=3
 		String Days[]= {"SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"} ;
 	
 		return (Days[day-1]) ;
