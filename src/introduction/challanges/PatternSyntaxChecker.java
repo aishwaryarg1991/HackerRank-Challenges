@@ -5,7 +5,7 @@ The first line of input contains an integer , denoting the number of test cases.
 Output Format
 For each test case, print Valid if the syntax of the given pattern is correct. Otherwise, print Invalid. Do not print the quotes.package introduction.challanges;
  */
-
+package introduction.challanges;
 import java.util.Scanner;
 import java.util.concurrent.ExecutionException;
 import java.util.regex.Pattern;
