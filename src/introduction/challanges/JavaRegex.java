@@ -24,7 +24,8 @@ class JavaRegex {
 	  String  zeroTo255 = "(\\d{1,2}|(0|1)\\d{2}|2[0-4]\\d|25[0-5])"; 
 	  String pattern = zeroTo255 + "." + zeroTo255 + "." + zeroTo255 + "." + zeroTo255; 
 	 
-	  /*OR "([0-9]|[0-9][0-9]|(0|1)[0-9][0-9]|2[0-4][0-9]|25[0-5])";
+	  /*OR "([0-9] | [0-9][0-9] | (0|1)[0-9][0-9] | 2[0-4][0-9] | 25[0-5])";
+	   
 	 * 1--> it can contain single digit i.e ([0-9]);
 	 * 
 	 * 2--> It can contain two digits i.e ([0-9][0-9]);
