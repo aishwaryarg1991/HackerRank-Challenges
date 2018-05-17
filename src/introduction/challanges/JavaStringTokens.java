@@ -28,7 +28,7 @@ public class JavaStringTokens {
         }
 
         for(String item: items){
-            System.out.println(items);
+            System.out.println(item);
         }
         scan.close();
     }
