@@ -42,7 +42,7 @@ class sortStudents implements Comparator<Student>{
 		}
 		else if (s1.getFname().compareTo(s2.getFname())!=0)   //(!s1.getFname().equals(s2.getFname()))
 				{
-			return s1.getFname().compareTo(s2.getFname());
+			return s1.getFname().compareTo(s2.getFname());   //if in decreasing order -s1.getFname().compareTo(s2.getFname()) or s2.getFname().compareTo(s1.getFname())
 				}
 		else
 			return s1.getId()-s2.getId();
@@ -69,8 +69,10 @@ public class JavaSort
 			
 			testCases--;
 		}
+		
       Collections.sort(studentList, new sortStudents());
-      	for(Student st: studentList){
+      	
+      for(Student st: studentList){
 			System.out.println(st.getFname());
 		}
 	}
