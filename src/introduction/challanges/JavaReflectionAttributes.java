@@ -20,8 +20,8 @@ public class JavaReflectionAttributes {
 
         ArrayList<String> methodList = new ArrayList<>();
         for( Method str: methods){
-            methodList.add(str.getName());;//Returns the name of the method represented by this Method object, as a String.
-        }
+            methodList.add(str.getName());//Returns the name of the method represented by this Method object, as a String.
+        }                                // as the getdeclaredMethods returns the complete path of the methods(to see use //str.toString()) we need to extract only the names by using getName()
         Collections.sort(methodList);
         for(String name: methodList){
             System.out.println(name);
