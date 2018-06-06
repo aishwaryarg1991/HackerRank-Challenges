@@ -21,11 +21,12 @@ public class JavaInstanceofkeyword {
 		      int a = 0,b = 0,c = 0;
 		      for(int i = 0; i < mylist.size(); i++){
 		         Object element=mylist.get(i);
-		         if(Students.class.isInstance(element))
+		         
+		         	 //or  if(Students.class.isInstance(element))
 		            a++;
-		         if(Rockstar.class.isInstance(element))
+		         if (element instanceof Rockstar) //or  (Rockstar.class.isInstance(element))
 		            b++;
-		         if(Hacker.class.isInstance(element))
+		         if(element instanceof Hacker)   //or (Hacker.class.isInstance(element))
 		            c++;
 		      }
 		      String ret = a +" "+ b+" "+ c;
