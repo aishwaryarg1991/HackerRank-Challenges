@@ -22,7 +22,7 @@ public class JavaInstanceofkeyword {
 		      for(int i = 0; i < mylist.size(); i++){
 		         Object element=mylist.get(i);
 		         
-		         	 //or  if(Students.class.isInstance(element))
+		         if (element instanceof Students) //or  if(Students.class.isInstance(element))
 		            a++;
 		         if (element instanceof Rockstar) //or  (Rockstar.class.isInstance(element))
 		            b++;
