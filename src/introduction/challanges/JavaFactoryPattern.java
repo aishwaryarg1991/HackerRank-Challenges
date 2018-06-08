@@ -20,7 +20,7 @@ public class JavaFactoryPattern {
 			
 			System.out.println("The factory returned "+food.getClass());
 			System.out.println(food.getType());
-		}
+			}
 		catch (Do_Not_Terminate.ExitTrappedException e) {
 			System.out.println("Unsuccessful Termination!!");
 		}
@@ -56,6 +56,8 @@ class FoodFactory{
 		}
 		else
 			return null;
+		
+		// OR return order.toLowerCase().equals("pizza") ? new Pizza() : new Cake();
 		
 	}
 }
