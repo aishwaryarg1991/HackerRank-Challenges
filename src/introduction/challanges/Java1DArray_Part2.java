@@ -40,7 +40,7 @@ public class Java1DArray_Part2 {
         if(i < 0 || game[i] == 1){    
             return false;
         }
-      if((i == game.length - 1) || i + leap > game.length - 1){
+      if((i == game.length - 1) || i + leap > game.length - 1){ //last element or beyond
              return true;
       }
   
